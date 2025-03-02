@@ -13,7 +13,7 @@ title                    : "Kun's Homepage"
 title_separator          : "-"
 name                     : &name "Kun Wang"
 description              : &description "personal description description"
-url                      : https://username.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : https://kunwang0129.github.io/ # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "KunWang0129/KunWang0129.github.io"
 
@@ -22,13 +22,13 @@ repository               : "KunWang0129/KunWang0129.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "Kun_Profile.jpg"
+  avatar           : "Profile_pic.png"
   name             : "Kun Wang"
   pronouns         : # example: "she/her"  
   bio              : "Spatio-Temporal Learning \nunder Prof. Rose Yu"
   location         : "Earth"
   employer         : "UC San Diego"
-  uri              : "kunwang0129.github.io"
+  uri              : # URL
   email            : "brianwang233@outlook.com" 
 
   # Academic websites
