@@ -2,9 +2,9 @@
 title: "Mathematics Instructional Assistant"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2022-teaching-1
+permalink: /teaching/2022-math-teaching
 venue: "University of California San Diego, Department of Mathematics"
-date: 2022 → 2023
+date: 09-15-2022
 location: "San Diego, California"
 ---
 
