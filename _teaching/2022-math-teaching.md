@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2022-math-teaching
 venue: "University of California San Diego, Department of Mathematics"
-date: 09-15-2022
+date: 2022-09-15
 location: "San Diego, California"
 ---
 

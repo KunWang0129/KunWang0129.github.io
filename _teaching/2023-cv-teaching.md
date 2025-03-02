@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate Course"
 permalink: /teaching/2023-cv-teaching
 venue: "University of California San Diego, Department of Computer Science Engineering"
-date: 09-15-2023
+date: 2023-09-15
 location: "San Diego, California"
 ---
 
