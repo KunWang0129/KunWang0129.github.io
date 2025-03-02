@@ -17,12 +17,14 @@ My research interest lies at the intersection of machine learning and scientific
 
 Works:
 ======
+\* denotes equal contribution; # denotes the corresponding author.
 
-**Discovering Latent Structural Causal Models from Spatio-Temporal Data** arXiv Prerint, 2024\
-***Kun Wang\***, Sumanth Varambally\*, Duncan Watson-Parris, Yian Ma, Rose Yu*\
-[Paper](https://arxiv.org/abs/2411.05331) \
-Oral Presentation, [NeurIPS 2024 Causal Representation Learning Workshop](https://crl-community.github.io/neurips24)
+**Discovering Latent Structural Causal Models from Spatio-Temporal Data**\
+***Kun Wang\***, Sumanth Varambally\*, Duncan Watson-Parris, Yian Ma, Rose Yu<sup>#</sup>*\
+Under review, 2024\
+\[[Paper](https://arxiv.org/abs/2411.05331)\] Oral Presentation, [NeurIPS 2024 Causal Representation Learning Workshop](https://crl-community.github.io/neurips24)
 
 **SceneProg: Program Synthesis for 3D Scene Generation using 
-LLMs** Under review, 2025\
-*Kunal Gupta, Ishit Mehta, **Kun Wang**, Nicholas Chua, Yan Deng, Abhimanyu Krishna, Ravi Ramamoorthi, Manmohan Chandraker*
+LLMs**\
+*Kunal Gupta, Ishit Mehta, **Kun Wang**, Nicholas Chua, Yan Deng, Abhimanyu Krishna, Ravi Ramamoorthi, Manmohan Chandraker<sup>#</sup>*\
+Under review, 2025
