@@ -8,8 +8,8 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "Kun's Homepage"
-title                    : "Your Name / Site Title"
+site_theme               : "default"
+title                    : "Kun's Homepage"
 title_separator          : "-"
 name                     : &name "Kun Wang"
 description              : &description "personal description description"
