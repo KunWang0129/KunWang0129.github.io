@@ -11,7 +11,7 @@ redirect_from:
 Hello there, Kun Wang/王堃 here.\
 *Incoming CS PhD Student @ Princeton University | Mathematics & CS Undergrad @ UC San Diego*
 
-Currently, I am a research assistant advised by [prof. Rose Yu](https://roseyu.com/) and [prof. Yian Ma](https://sites.google.com/view/yianma/home) in the Rose Spatio-Temporal Lab. In the past, I have worked with [prof. Manmohan Chandraker](https://cseweb.ucsd.edu/~mkchandraker/) on 3D reasoning ability of Large Language Models. 
+Currently, I am a research assistant advised by [Prof. Rose Yu](https://roseyu.com/) and [Prof. Yian Ma](https://sites.google.com/view/yianma/home) in the Rose Spatio-Temporal Lab. In the past, I have worked with [Prof. Manmohan Chandraker](https://cseweb.ucsd.edu/~mkchandraker/) on 3D reasoning ability of Large Language Models. 
 
 My research interest lies at the intersection of machine learning and scientific domains. I develop interpretable models through causality and generative AI, aiming to address challenges in climate science, healthcare, and dynamical systems.  
 
