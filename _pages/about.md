@@ -13,7 +13,9 @@ Hello there, Kun Wang/王堃 here.\
 
 Currently, I am a research assistant advised by [Prof. Rose Yu](https://roseyu.com/) and [Prof. Yian Ma](https://sites.google.com/view/yianma/home) in the Rose Spatio-Temporal Lab. In the past, I have worked with [Prof. Manmohan Chandraker](https://cseweb.ucsd.edu/~mkchandraker/) on 3D reasoning ability of Large Language Models. 
 
-My research interest lies at the intersection of machine learning and scientific domains. I develop interpretable models through causality and generative AI, aiming to address challenges in climate science, healthcare, and dynamical systems.  
+Recently my interest has shifted towards probing the emergent abilities—and limitations—of LLMs and AI agents, particularly in comparison to human cognition:
+- **Out-of-Domain Challenges:** What underlying principles make tasks like spatial reasoning and multi-step puzzle solving uniquely challenging for LLMs despite human ease—and how can we integrate their strengths in pattern recognition with human-inspired reasoning frameworks?*
+- **Tool Understanding vs. Tool Use:** While LLMs demonstrate impressive tool-use capabilities (e.g., API calls, code interpreters), do they develop mechanistic understanding of these tools’ why and how, or merely master syntactic patterns? What gaps persist between operational competence and conceptual grasp?
 
 Works:
 ======
