@@ -23,8 +23,9 @@ Works:
 
 **Discovering Latent Structural Causal Models from Spatio-Temporal Data**\
 ***Kun Wang\***, Sumanth Varambally\*, Duncan Watson-Parris, Yian Ma, Rose Yu<sup>#</sup>*\
-Under review, 2024\
-\[[Paper](https://arxiv.org/abs/2411.05331)\] Oral Presentation, [NeurIPS 2024 Causal Representation Learning Workshop](https://crl-community.github.io/neurips24)
+International Conference on Machine Learning ([ICML](https://icml.cc/)), 2025\
+Oral Presentation, [NeurIPS 2024 Causal Representation Learning Workshop](https://crl-community.github.io/neurips24)\
+\[[Paper](https://arxiv.org/abs/2411.05331)\]
 
 **SceneProg: Program Synthesis for 3D Scene Generation using 
 LLMs**\
