@@ -14,7 +14,7 @@ Hello there, Kun Wang here.\
 Currently, I am a research assistant advised by [Prof. Rose Yu](https://roseyu.com/) and [Prof. Yian Ma](https://sites.google.com/view/yianma/home) in the Rose Spatio-Temporal Lab. In the past, I have worked with [Prof. Manmohan Chandraker](https://cseweb.ucsd.edu/~mkchandraker/) on 3D reasoning ability of Large Language Models. 
 
 My current research interest lies within the parallel of human and AI agents:
-- 👀 Cognition: How  humans and AI process complex environments with diverse sensory inputs.
+- 👀 Cognition: How humans and AI process complex environments and senses.
 - 🧠 Reasoning: Problem-solving from sequential planning to parallel processing.
 - 📊 Modeling: Modeling and guiding LLM behavior via statistical methods.
 - 💡 Creativity: The synergy of human insight and algorithmic processes.
