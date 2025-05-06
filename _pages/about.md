@@ -15,7 +15,7 @@ Currently, I am a research assistant advised by [Prof. Rose Yu](https://roseyu.c
 
 My current research interest lies within the parallel of human and AI agents:
 - 👀 Cognition: How  humans and AI process complex environments with diverse sensory inputs.
-- 🧠 Reasoning: Problem-solving from step-by-step analysis to parallel processing.
+- 🧠 Reasoning: Problem-solving from sequential planning to parallel processing.
 - 📊 Modeling: Modeling and guiding LLM behavior via statistical methods.
 - 💡 Creativity: The synergy of human insight and algorithmic processes.
 
