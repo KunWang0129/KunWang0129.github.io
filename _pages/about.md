@@ -27,7 +27,7 @@ Works:
 ======
 \* denotes equal contribution; # denotes the corresponding author.
 
-**Discovering Latent Structural Causal Models from Spatio-Temporal Data**\
+**Discovering Latent Causal Graphs from Spatio-Temporal Data**\
 ***Kun Wang\***, Sumanth Varambally\*, Duncan Watson-Parris, Yian Ma, Rose Yu<sup>#</sup>*\
 International Conference on Machine Learning ([ICML](https://icml.cc/)), 2025\
 Oral Presentation, [NeurIPS 2024 Causal Representation Learning Workshop](https://crl-community.github.io/neurips24)\
