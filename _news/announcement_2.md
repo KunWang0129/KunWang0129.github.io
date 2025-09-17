@@ -1,33 +1,31 @@
 ---
 layout: post
-title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
+title: Paper Accepted to ICML 2025!
+date: 2024-12-15 14:30:00-0800
 inline: false
 related_posts: false
 ---
 
-Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
+I'm thrilled to announce that our paper "Discovering Latent Causal Graphs from Spatio-Temporal Data" has been accepted to ICML 2025 as an **oral presentation**! 🎉
 
 ---
 
-Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.
+This work represents a significant step forward in understanding causal relationships within complex spatio-temporal datasets. Our approach addresses the challenging problem of causal inference when dealing with data that has both spatial and temporal dependencies.
 
-#### Hipster list
+#### Key contributions include:
 
 <ul>
-    <li>brunch</li>
-    <li>fixie</li>
-    <li>raybans</li>
-    <li>messenger bag</li>
+    <li>Novel methodology for latent causal graph discovery</li>
+    <li>Robust handling of spatio-temporal dependencies</li>
+    <li>Extensive empirical validation on real-world datasets</li>
+    <li>Theoretical guarantees for identifiability</li>
 </ul>
 
-Hoodie Thundercats retro, tote bag 8-bit Godard craft beer gastropub. Truffaut Tumblr taxidermy, raw denim Kickstarter sartorial dreamcatcher. Quinoa chambray slow-carb salvia readymade, bicycle rights 90's yr typewriter selfies letterpress cardigan vegan.
+This research was conducted in collaboration with my amazing co-authors Sumanth Varambally, Duncan Watson-Parris, and my advisor Prof. Rose Yu at the Rose Spatio-Temporal Lab.
 
 ---
 
-Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxidermy reprehenderit fap distillery master cleanse locavore. Est anim sapiente leggings Brooklyn ea. Thundercats locavore excepteur veniam eiusmod. Raw denim Truffaut Schlitz, migas sapiente Portland VHS twee Bushwick Marfa typewriter retro id keytar.
+I'm grateful for the opportunity to present this work at one of the premier conferences in machine learning. Looking forward to the discussions and feedback from the community!
 
-> We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
-> —Anais Nin
-
-Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan church-key Odd Future accusamus. Blog stumptown sartorial squid, gastropub duis aesthetic Truffaut vero. Pinterest tilde twee, odio mumblecore jean shorts lumbersexual.
+> "The goal is to turn data into information, and information into insight."
+> —Carly Fiorina
