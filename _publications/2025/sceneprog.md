@@ -12,7 +12,8 @@ authors:
 pub: "Under Review"
 pub_date: "2025"
 abstract: "We present SceneProg, a novel approach that leverages Large Language Models for program synthesis to generate complex 3D scenes, enabling intuitive scene creation through natural language instructions."
+cover: /assets/images/photos/paper/sceneprog.png
 links:
 selected: true
-date: 2024-11-14
+date: 2025-01-01
 ---
