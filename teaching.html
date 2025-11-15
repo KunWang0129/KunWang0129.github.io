@@ -1,0 +1,28 @@
+---
+layout: default
+title: Teaching
+navbar_title: Teaching
+---
+
+{% assign teaching_sorted = site.teaching | sort: "date" | reverse %}
+
+<div class="row">
+    <div class="col-12 col-lg-10">
+        <h2 class="pt-4">Teaching Experience</h2>
+        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+            {% for item in teaching_sorted %}
+            <div class="p-4 {% unless forloop.last %}border-bottom border-gray{% endunless %}">
+                <h5 class="mt-0 mb-2 font-weight-normal">{{ item.title }}</h5>
+                <p class="mt-0 mb-1 small text-muted">
+                    <strong>{{ item.type }}</strong><br/>
+                    {{ item.venue }}<br/>
+                    {{ item.date | date: "%B %Y" }}
+                </p>
+                <div class="mt-2 small">
+                    {{ item.content }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

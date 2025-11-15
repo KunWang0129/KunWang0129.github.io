@@ -1,28 +1,12 @@
-# The following is the order of the links in the header of the website.
-#
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
-
-main:
-  # - title: "Publications"
-  #   url: /publications/
-
-  # - title: "Talks"
-  #   url: /talks/    
-
-  - title: "Teaching"
-    url: /teaching/    
-    
-  # - title: "Portfolio"
-  #   url: /portfolio/
-        
-  # - title: "Blog Posts"
-  #   url: /year-archive/
-    
-  - title: "CV"
-    # url: /cv/
-    url: /files/Kun_Wang_CV.pdf
-    
-  # - title: "Guide"
-  #   url: /markdown/
+pages:
+# NOTE: `name` field must match the `navbar_title` field in the page's front matter to ensure the correct page is highlighted in the navbar.
+#       For example, the `navbar_title` field in `showcase.html` is "Showcase" and the `name` field here should also be "Showcase"
+- name: Home
+  url: /
+- name: Publications
+  url: /publications
+- name: Teaching
+  url: /teaching
+- name: CV
+  url: /assets/files/Kun_Wang_CV.pdf
+  target: _blank

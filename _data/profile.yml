@@ -1,0 +1,58 @@
+primary_name: "Kun Wang"
+secondary_name: "王堃"
+navbar_name: "Kun Wang"
+
+positions:
+- name: Incoming PhD Student @ Princeton University
+- name: Research Assistant @ UC San Diego
+
+email: "brianwang233@outlook.com"
+cv_link: /assets/files/Kun_Wang_CV.pdf
+github: kunwang0129
+linkedin: kun-wang-9b1304223
+# gscholar: # Add your Google Scholar ID when available
+# twitter:
+# orcid:
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    I am an incoming CS PhD student at <a href="https://www.princeton.edu/" target="_blank">Princeton University</a>.
+    Currently, I am a research assistant advised by <a href="https://roseyu.com/" target="_blank">Prof. Rose Yu</a>
+    and <a href="https://sites.google.com/view/yianma/home" target="_blank">Prof. Yian Ma</a> in the Rose Spatio-Temporal Lab.
+    In the past, I have worked with <a href="https://cseweb.ucsd.edu/~mkchandraker/" target="_blank">Prof. Manmohan Chandraker</a>
+    on 3D reasoning ability of Large Language Models.
+  </p>
+  <p>
+    My current research interest lies within the parallel of human and AI agents, focusing on:
+    👀 <strong>Cognition</strong> - How humans and AI process complex environments and senses;
+    🧠 <strong>Reasoning</strong> - Problem-solving from sequential planning to parallel processing;
+    📊 <strong>Modeling</strong> - Modeling and guiding LLM behavior via statistical methods;
+    💡 <strong>Creativity</strong> - The synergy of human insight and algorithmic processes.
+  </p>
+
+portrait_url: /assets/images/Profile_pic.png
+# portrait_caption:
+
+education:
+- name: Princeton University
+  position: >-
+    Department of Computer Science <br/>
+    Ph.D. Student
+  date: Starting Fall 2025
+- name: UC San Diego
+  position: >-
+    B.S. in Mathematics & Computer Science
+  date: Sep. 2021 - Jun. 2025
+
+experience:
+- name: UC San Diego - Rose Spatio-Temporal Lab
+  position: Research Assistant (Advised by Prof. Rose Yu & Prof. Yian Ma)
+  date: 2023 - present
+- name: UC San Diego - Vision Lab
+  position: Research Assistant (Advised by Prof. Manmohan Chandraker)
+  date: 2023 - 2024
+
+# awards:
+# - name: Award Name
+#   date: 2024
