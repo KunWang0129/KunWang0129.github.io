@@ -16,7 +16,7 @@ linkedin: kun-wang-9b1304223
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    Hello! I am a first-year CS Ph.D. student at <a href="https://www.princeton.edu/" target="_blank">Princeton University</a>, working with <a href="https://www.cs.princeton.edu/~olgarus/" target="_blank">Prof. Olga Russakovsky</a>.
+    Hello! I am a first-year CS Ph.D. student at <a href="https://www.princeton.edu/" target="_blank">Princeton University</a>, advised by <a href="https://www.cs.princeton.edu/~olgarus/" target="_blank">Prof. Olga Russakovsky</a>.
     During my undergraduate studies at UC San Diego, I was fortunate to be advised by
     <a href="https://roseyu.com/" target="_blank">Prof. Rose Yu</a> and
     <a href="https://sites.google.com/view/yianma/home" target="_blank">Prof. Yian Ma</a> on spatio-temporal causal discovery,
@@ -24,7 +24,7 @@ short_bio: >-
     on 3D scene generation with Large Language Models.
   </p>
   <p>
-    Currently, I'm interested in <strong>Cognitive Representations and Memory in Vision Language Models</strong>.
+    Currently, I'm interested in <strong>Generalizability of Vision Language Models</strong>.
   </p>
 
 portrait_url: /assets/images/photos/portrait.png
