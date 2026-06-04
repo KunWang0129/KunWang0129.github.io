@@ -31,7 +31,7 @@ authors:
   - Chi Jin
 pub: "arXiv Preprint"
 pub_date: "2026"
-abstract: "As large language models grow capable at reasoning, coding, and engineering, it is increasingly important to know whether they can discover generalizable, scalable ML methods rather than only apply existing ones. We introduce MLS-Bench, a benchmark of 140 tasks across 12 domains that tests whether AI systems can invent ML methods that demonstrably generalize and scale. We find current agents remain far from reliably surpassing human-designed methods, with the bottleneck being the scientific insight needed to plan, validate, and scale claims—not merely more search, compute, or context."
+abstract: "We introduce MLS-Bench, a benchmark of 140 tasks across 12 domains testing whether AI systems can invent generalizable, scalable ML methods rather than only apply existing ones—and find that current agents remain far from surpassing human-designed methods, bottlenecked by the scientific insight needed to plan and validate claims rather than by more search or compute."
 cover: /assets/images/photos/paper/mls.png
 links:
   Paper: "https://arxiv.org/abs/2605.08678"
