@@ -11,3 +11,8 @@ Gemfile.lock
 
 # Ignore the information files created by editors
 info/
+update/
+
+# Ignore AI Settings
+.claude/
+CLAUDE.md
