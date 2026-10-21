@@ -39,4 +39,16 @@ $(function () {
     $(".lazy").on("load", function () {
         $grid.masonry('layout');
     });
+
+    // Click a publication cover to view it full-size; click anywhere or press Esc to close
+    var $lightbox = $('<div class="pub-lightbox" role="dialog" aria-label="Enlarged figure"><img alt=""></div>').appendTo('body');
+    $(document).on('click', '.pub-cover-link', function (e) {
+        e.preventDefault();
+        $lightbox.find('img').attr('src', $(this).attr('href')).attr('alt', $(this).find('img').attr('alt'));
+        $lightbox.addClass('show');
+    });
+    $lightbox.on('click', function () { $lightbox.removeClass('show'); });
+    $(document).on('keydown', function (e) {
+        if (e.key === 'Escape') $lightbox.removeClass('show');
+    });
 })
