@@ -29,12 +29,15 @@ authors:
   - Jiantao Jiao
   - Dawn Song
   - Chi Jin
-pub: "arXiv Preprint"
+pub: "Conference on Neural Information Processing Systems (NeurIPS)"
 pub_date: "2026"
+pub_last: "| Datasets and Benchmarks Track, Oral Presentation"
 abstract: "We introduce MLS-Bench, a benchmark of 140 tasks across 12 domains testing whether AI systems can invent generalizable, scalable ML methods rather than only apply existing ones—and find that current agents remain far from surpassing human-designed methods, bottlenecked by the scientific insight needed to plan and validate claims rather than by more search or compute."
 cover: /assets/images/photos/paper/mls.png
 links:
   Paper: "https://arxiv.org/abs/2605.08678"
+  Code: "https://github.com/Imbernoulli/MLS-Bench"
+  Website: "https://mls-bench.com"
 selected: false
 date: 2026-05-01
 ---

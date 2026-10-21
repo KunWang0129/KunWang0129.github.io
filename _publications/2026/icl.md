@@ -1,17 +1,18 @@
 ---
-title: "In-Context Learning Can Help Vision-Language Models Overcome Training Prior"
+title: "In-Context Learning Can Help Vision-Language Models Overcome Training Priors"
 authors:
   - Kun Wang
   - Xindi Wu
   - Sanghyuk Chun
   - Olga Russakovsky
   - Esin Tureci
-pub: "NeurIPS"
+pub: "Conference on Neural Information Processing Systems (NeurIPS)"
 pub_date: "2026"
-pub_last: "| Coming Soon"
 abstract: "Vision-language models often fail on images that violate their training priors—a deficit usually read as missing visual capability—yet we show that controlled visual in-context learning lets them overcome these priors, recovering large gains (up to +30.3%) on prior-conflicting examples while leaving real accuracy unchanged and revealing grounding abilities that standard evaluations overlook."
 cover: /assets/images/photos/paper/icl.png
 links:
+  Paper: "https://arxiv.org/abs/2610.12942"
+  Code: "https://github.com/princetonvisualai/vlm_icl_tp"
 selected: true
 date: 2026-06-01
 ---
