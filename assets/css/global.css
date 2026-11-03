@@ -310,7 +310,7 @@ u.pub-me {
 /* ---- Homepage intro card (portrait + bio + compact education) ---- */
 .intro-main {
     /* No side padding so the bio column starts where paper titles do (25% on lg). */
-    padding: 1.75rem 0 1.25rem;
+    padding: 2.5rem 0 2rem;
 }
 
 .intro-main > .intro-side {
@@ -324,8 +324,24 @@ u.pub-me {
 
 .intro-portrait {
     width: 100%;
-    max-width: 180px;
+    max-width: 210px;
     border-radius: 0.6rem;
+}
+
+/* Bio: larger, softer, left-aligned text with generous line spacing (modeled on wenhaochai.com) */
+.intro-body .text-profile-bio {
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    color: #3d4248;
+    max-width: 640px;
+}
+
+.intro-body .text-profile-bio p {
+    margin-bottom: 1rem;
+}
+
+.intro-body .text-muted.mb-3 {
+    margin-bottom: 1.5rem !important;
 }
 
 .intro-icons a {
@@ -338,7 +354,16 @@ u.pub-me {
 }
 
 .intro-name {
+    font-size: 2.5rem;
     font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    margin-bottom: 0.4rem;
+}
+
+.intro-cv {
+    display: inline-block;
+    margin-top: 0.25rem;
 }
 
 .intro-name small {
@@ -350,7 +375,7 @@ u.pub-me {
     display: flex;
     align-items: baseline;
     column-gap: 1.5rem;
-    padding: 0.6rem 1.5rem;
+    padding: 0.85rem 1.5rem;
 }
 
 /* Schools wrap within their own column, so a second row lines up under the first school. */
@@ -373,6 +398,18 @@ u.pub-me {
     vertical-align: -3px;
 }
 
+/* Desktop: portrait starts in line with the paper thumbnails; wide (~4rem) gap before the bio */
+@media (min-width: 768px) {
+    .intro-main > .intro-side {
+        padding: 0 2.5rem 0 1.5rem;
+    }
+
+    .intro-main > .intro-body {
+        padding-left: 1.5rem;
+        padding-right: 2rem;
+    }
+}
+
 @media (max-width: 767.98px) {
     .intro-main > .intro-side {
         margin-bottom: 1.25rem;
@@ -383,7 +420,11 @@ u.pub-me {
     }
 
     .intro-portrait {
-        max-width: 150px;
+        max-width: 160px;
+    }
+
+    .intro-name {
+        font-size: 2rem;
     }
 }
 
@@ -435,4 +476,66 @@ a:focus {
     color: var(--accent);
     background: transparent;
     font-weight: 600;
+}
+
+/* ---- Homepage spacing (scoped to .home-sections so the Publications page is unchanged) ---- */
+
+/* 1. More room between sections (Bootstrap's my-3 is !important, hence the overrides) */
+.home-sections > .intro-card {
+    margin-top: 1.75rem !important;
+}
+
+.home-sections > .my-3 {
+    margin-top: 0 !important;
+    margin-bottom: 2rem !important;
+}
+
+/* 2. Each paper gets more padding and small gaps between title / authors / venue / links */
+@media (min-width: 768px) {
+    .home-sections .pub-item > [class*="col-"] {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    .home-sections .pub-item > [class*="col-"]:first-child {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .home-sections .pub-item > .pub-body {
+        padding-bottom: 1.5rem !important;
+    }
+}
+
+.home-sections .pub-title {
+    margin-bottom: 0.4rem !important;
+    line-height: 1.3;
+}
+
+.home-sections .pub-body > p.small {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin-bottom: 0.3rem !important;
+}
+
+.home-sections .pub-body > p.pub-links {
+    margin-top: 0.35rem;
+}
+
+/* 3. Fewer lines: faint rules between papers, no heavy group rule, no rule above the footnote */
+.home-sections .pub-item.border-bottom {
+    border-bottom-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.home-sections .pub-group-divider {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    margin-top: 1rem;
+}
+
+.home-sections .pub-footnote {
+    border-top: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 1rem !important;
 }
