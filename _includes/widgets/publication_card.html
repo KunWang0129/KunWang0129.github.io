@@ -1,16 +1,32 @@
-{% assign publications = include.publications %}
+{%- assign publications = include.publications -%}
 <div class="my-3 p-0 bg-white shadow-sm rounded-xl">
     <h6 class="border-bottom border-gray p-3 mb-0">
         {% if include.title %}{{ include.title }}{% else %}<i class="fas fa-star"></i> Selected Recent Publications{% endif %}
         {% if include.show_all_link %}<a href="{{ 'publications' | relative_url }}">(view all <i class="fas fa-angle-double-right"></i>)</a>{% endif %}
     </h6>
-    {% for item in publications limit:include.limit %}
-        {% include widgets/publication_item.html item=item first=false last=forloop.last hide_bottom_border=forloop.last %}
-    {% endfor %}
+    {%- if include.group_first_author -%}
+        {%- assign group_a = publications | where: "first_author", true -%}
+        {%- assign group_b = publications | where_exp: "p", "p.first_author != true" -%}
+        {%- for item in group_a %}
+            {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last hide_legend=include.hide_legend %}
+        {%- endfor %}
+        {%- if group_a.size > 0 and group_b.size > 0 %}
+        <div class="pub-group-divider" role="separator"></div>
+        {%- endif %}
+        {%- for item in group_b %}
+            {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last hide_legend=include.hide_legend %}
+        {%- endfor -%}
+    {%- else -%}
+        {%- for item in publications limit:include.limit %}
+            {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last hide_legend=include.hide_legend %}
+        {%- endfor -%}
+    {%- endif -%}
     {% if include.show_all_link %}
     <h6 class="d-block p-3 mt-0 text-right">
         <a href="{{ 'publications' | relative_url }}">All publications <i class="fas fa-angle-double-right"></i></a>
     </h6>
     {% endif %}
+    {% if include.footnote %}
+    <p class="pub-footnote small text-muted mb-0 px-4 py-2 border-top border-gray">{{ include.footnote }}</p>
+    {% endif %}
 </div>
-

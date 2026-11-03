@@ -1,5 +1,7 @@
 homepage:
   show_experience: true
+  show_work_experience: true
+  show_service: true
   show_news: false
   show_selected_publications: true
   num_news: 10

@@ -47,6 +47,15 @@ $(function () {
         $lightbox.find('img').attr('src', $(this).attr('href')).attr('alt', $(this).find('img').attr('alt'));
         $lightbox.addClass('show');
     });
+    // [abs] toggle: expand/collapse the abstract belonging to the same publication item
+    $(document).on('click', '.pub-abs-toggle', function () {
+        var $btn = $(this);
+        var $abs = $btn.closest('.pub-body').find('.pub-abstract').first();
+        var open = $btn.attr('aria-expanded') === 'true';
+        $btn.attr('aria-expanded', open ? 'false' : 'true');
+        $abs.prop('hidden', open);
+    });
+
     $lightbox.on('click', function () { $lightbox.removeClass('show'); });
     $(document).on('keydown', function (e) {
         if (e.key === 'Escape') $lightbox.removeClass('show');

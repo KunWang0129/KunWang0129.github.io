@@ -1,0 +1,21 @@
+{%- comment -%}
+  Venue line.
+  Params: item, full (true => full venue name with the short name bolded, ending with the year; used on the publications page)
+  Falls back to the legacy pub / pub_date / pub_last format when `venue` is missing.
+{%- endcomment -%}
+{%- assign item = include.item -%}
+{%- if item.venue -%}
+    {%- if include.full -%}
+        {%- capture venue_needle -%}({{ item.venue }}){%- endcapture -%}
+        {%- capture venue_bold -%}(<b>{{ item.venue }}</b>){%- endcapture -%}
+        <span class="pub-venue">{{ item.pub | replace: venue_needle, venue_bold }}, {{ item.pub_date }}.
+        {%- if item.venue_note %} {{ item.venue_note | remove_first: "· " }}{% endif -%}
+        {%- if item.highlight %} <span class="venue-highlight">({{ item.highlight }})</span>{% endif -%}</span>
+    {%- else -%}
+        <span class="pub-venue" title="{{ item.pub }}"><b>{{ item.venue }}</b> {{ item.pub_date }}
+        {%- if item.venue_note %} {{ item.venue_note }}{% endif -%}
+        {%- if item.highlight %} <span class="venue-highlight">({{ item.highlight }})</span>{% endif -%}</span>
+    {%- endif -%}
+{%- else -%}
+    <span class="pub-venue">{{ item.pub_pre }}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</span>
+{%- endif -%}

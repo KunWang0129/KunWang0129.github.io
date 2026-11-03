@@ -16,7 +16,7 @@ gscholar: f9-XW5oAAAAJ
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    Hello! I am a first-year CS Ph.D. student at Princeton University, advised by <a href="https://www.cs.princeton.edu/~olgarus/" target="_blank">Prof. Olga Russakovsky</a>.
+    Hello! I am a second-year CS Ph.D. student at Princeton University, advised by <a href="https://www.cs.princeton.edu/~olgarus/" target="_blank">Prof. Olga Russakovsky</a>.
     During my undergraduate studies at UC San Diego, I was fortunate to be advised by
     <a href="https://roseyu.com/" target="_blank">Prof. Rose Yu</a> and
     <a href="https://sites.google.com/view/yianma/home" target="_blank">Prof. Yian Ma</a> on spatio-temporal causal discovery,
@@ -24,7 +24,7 @@ short_bio: >-
     on 3D scene generation with Large Language Models.
   </p>
   <p>
-    I'm generally interested in <strong>embodied agents and accelerating vision research</strong>, currently working on <strong>robotics agents and world models</strong>.
+    I'm generally interested in <strong>visual agents and accelerating vision research</strong>, currently working on <strong>robotics agents and world models</strong>.
   </p>
 
 portrait_url: /assets/images/photos/portrait.png
@@ -54,3 +54,36 @@ education:
 # awards:
 # - name: Award Name
 #   date: 2024
+
+# Shown in the "Experience" card on the homepage (widgets/work_experience_card.html).
+# Note: do not rename to `experience` -- that key is rendered inside the Education card.
+work_experience:
+- name: Amazon
+  role: Software Development Engineer Intern, AI
+  date: Summer 2025
+  topic: Automating AI Coding Agent
+  logo: /assets/images/badges/amazon_logo.png
+- name: China Asset Management
+  role: Machine Learning Intern
+  date: Summer 2024
+  topic: Financial forecasting
+  logo: /assets/images/badges/chinaamc_logo.png
+
+# Shown in the "Service" card on the homepage (widgets/service_card.html).
+# Items are plain strings, or {text, long: true} for long entries that may wrap.
+service:
+- role: Reviewer
+  items:
+  - SIGGRAPH Asia
+  - ICML
+  - NeurIPS
+- role: Teaching
+  items:
+  - text: CSE 152A Intro to Computer Vision (TA), UC San Diego, 2023
+    long: true
+  - text: Linear Algebra &amp; Differential Equations (Instructional Assistant), UC San Diego, 2022&ndash;2023
+    long: true
+- role: Outreach
+  items:
+  - text: "O-STEM: Queer in AI, Volunteer Organizer, 2024"
+    long: true

@@ -10,12 +10,22 @@ body_attr: >-
 
 <div class="row">
     <div class="col-12 col-lg-10">
+        <div class="pubs-masthead d-flex flex-wrap align-items-baseline justify-content-between">
+            <h1 class="mb-0">Publications</h1>
+            <a class="pubs-scholar-link" target="_blank" href="https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}">Google Scholar &#8599;</a>
+        </div>
+        <p class="small text-muted mt-1 mb-0">* denotes equal contribution.</p>
+
         {% for year in pubs_by_year %}
-        {% assign num_papers = year.items | size %}
         <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
         <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
             {% for item in year.items %}
-                {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+            <div class="pub-text-item px-4 py-3 {% unless forloop.last %}border-bottom{% endunless %} border-gray">
+                <h5 class="pub-title mt-0 mb-1">{{ item.title }}</h5>
+                <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors hide_legend=true %}</p>
+                <p class="mt-0 mb-0 small">{% include widgets/pub_venue.html item=item full=true %}</p>
+                {% include widgets/pub_links.html item=item %}
+            </div>
             {% endfor %}
         </div>
         {% endfor %}

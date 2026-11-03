@@ -32,8 +32,19 @@ navbar_title: Home
         {%
         include widgets/publication_card.html
         publications=pubs
-        title='<i class="fas fa-book"></i> Publications'
+        title='<i class="fas fa-book"></i> Research'
+        group_first_author=true
+        hide_legend=true
+        footnote='* denotes equal contribution'
         %}
+        {% endif %}
+
+        {% if site.data.display.homepage.show_work_experience %}
+        {% include widgets/work_experience_card.html %}
+        {% endif %}
+
+        {% if site.data.display.homepage.show_service %}
+        {% include widgets/service_card.html %}
         {% endif %}
     </div>
 </div>

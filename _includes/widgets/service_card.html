@@ -1,0 +1,17 @@
+<div class="my-3 p-0 bg-white shadow-sm rounded-xl">
+    <h6 class="border-bottom border-gray p-3 mb-0"><i class="fas fa-hands-helping"></i> Service</h6>
+    <div class="service-grid px-4 py-3">
+        {%- for group in site.data.profile.service %}
+        <div class="service-role">{{ group.role }}</div>
+        <ul class="service-items list-unstyled mb-0">
+            {%- for item in group.items %}
+            {%- if item.text %}
+            <li{% if item.long %} class="is-long"{% endif %}>{{ item.text }}</li>
+            {%- else %}
+            <li>{{ item }}</li>
+            {%- endif %}
+            {%- endfor %}
+        </ul>
+        {%- endfor %}
+    </div>
+</div>

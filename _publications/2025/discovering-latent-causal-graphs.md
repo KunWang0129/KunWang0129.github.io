@@ -7,13 +7,16 @@ authors:
   - Yian Ma
   - Rose Yu
 pub: "International Conference on Machine Learning (ICML)"
+venue: "ICML"
+venue_note: "· Oral at NeurIPS 2024 CRL Workshop"
 pub_date: "2025"
 pub_last: "| Oral Presentation at NeurIPS 2024 Causal Representation Learning Workshop"
 abstract: "This paper presents a novel approach to discovering latent causal structures from spatio-temporal data, addressing the challenge of identifying causal relationships in complex dynamical systems."
 cover: /assets/images/photos/paper/spatiotemporalcausaldiscovery.png
 links:
-  Paper: "https://arxiv.org/abs/2411.05331"
+  arXiv: "https://arxiv.org/abs/2411.05331"
 selected: true
+first_author: true
 date: 2025-07-01
 ---
 

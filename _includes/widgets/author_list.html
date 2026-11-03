@@ -32,7 +32,7 @@
     {%- endif -%}
 
     {%- if info['bold'] == true -%}
-        {%- assign display_name = name | append: mark | prepend: "<strong>" | append: "</strong>" -%}
+        {%- assign display_name = name | prepend: '<strong><u class="pub-me">' | append: "</u>" | append: mark | append: "</strong>" -%}
     {%- else -%}
         {%- assign display_name = name | append: mark -%}
     {%- endif -%}
@@ -47,7 +47,8 @@
 
 {%- endfor -%}
 
-{%- if has_eq_contrib or has_corresponding %}
+{%- comment -%}Liquid has no parentheses; it groups right-to-left: a and (b or c).{%- endcomment -%}
+{%- if include.hide_legend != true and has_eq_contrib or has_corresponding %}
 <mark>(
     {%- if has_eq_contrib -%}
         * <i> equal contribution</i>

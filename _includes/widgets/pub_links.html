@@ -1,0 +1,19 @@
+{%- comment -%}
+  Links row: [abs] [arXiv] [code] ...
+  Params: item, show_abs (true to render the abstract toggle button)
+{%- endcomment -%}
+{%- assign item = include.item -%}
+{%- if item.links or include.show_abs and item.abstract -%}
+<p class="pub-links small pb-0 mb-0 lh-125">
+    {%- if include.show_abs and item.abstract -%}
+    <button type="button" class="pub-abs-toggle" aria-expanded="false">[abs]</button>
+    {%- endif -%}
+    {%- for link in item.links -%}
+    {%- if link[1].url -%}
+    <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
+    {%- else -%}
+    <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
+    {%- endif -%}
+    {%- endfor -%}
+</p>
+{%- endif -%}

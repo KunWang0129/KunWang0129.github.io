@@ -7,12 +7,14 @@ authors:
   - Olga Russakovsky
   - Esin Tureci
 pub: "Conference on Neural Information Processing Systems (NeurIPS)"
+venue: "NeurIPS"
 pub_date: "2026"
 abstract: "Vision-language models often fail on images that violate their training priors—a deficit usually read as missing visual capability—yet we show that controlled visual in-context learning lets them overcome these priors, recovering large gains (up to +30.3%) on prior-conflicting examples while leaving real accuracy unchanged and revealing grounding abilities that standard evaluations overlook."
 cover: /assets/images/photos/paper/icl.png
 links:
-  Paper: "https://arxiv.org/abs/2610.12942"
-  Code: "https://github.com/princetonvisualai/vlm_icl_tp"
+  arXiv: "https://arxiv.org/abs/2610.12942"
+  code: "https://github.com/princetonvisualai/vlm_icl_tp"
 selected: true
+first_author: true
 date: 2026-06-01
 ---

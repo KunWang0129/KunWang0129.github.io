@@ -2,6 +2,7 @@
 
 ![Preview](assets/images/etc/preview.png)
 
+[![Homepage](https://img.shields.io/badge/Homepage-KunWang0129.github.io-blue?logo=githubpages)](https://kunwang0129.github.io/)
 [![pages-build-deployment](https://github.com/luost26/academic-homepage/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/luost26/academic-homepage/actions/workflows/pages/pages-build-deployment)
 [![Hits](https://hits.sh/github.com/luost26/academic-homepage.svg?view=today-total)](https://hits.sh/github.com/luost26/academic-homepage/)
 [![GitHub stars](https://img.shields.io/github/stars/luost26/academic-homepage)](https://github.com/luost26/academic-homepage)
@@ -78,4 +79,3 @@ If you run into **any** issues while using this template, or have suggestions fo
 2. Go to the repository settings and enable GitHub Pages. Detailed instructions can be found [here](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site).
 
 3. Navigate to your created website, and follow the instructions displayed on the homepage (if any) to finalize the setup.
-

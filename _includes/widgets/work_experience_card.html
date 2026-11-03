@@ -1,0 +1,16 @@
+<div class="my-3 p-0 bg-white shadow-sm rounded-xl">
+    <h6 class="border-bottom border-gray p-3 mb-0"><i class="fas fa-briefcase"></i> Experience</h6>
+    <div class="work-exp-list px-4 py-3">
+        {%- for item in site.data.profile.work_experience %}
+        <div class="work-exp-item">
+            <div class="work-exp-logo">
+                <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" onerror="this.style.display='none'">
+            </div>
+            <div class="work-exp-text">
+                <div><strong>{{ item.name }}</strong> &middot; {{ item.role }}</div>
+                <div class="text-muted small">{{ item.date }} &middot; {{ item.topic }}</div>
+            </div>
+        </div>
+        {%- endfor %}
+    </div>
+</div>
