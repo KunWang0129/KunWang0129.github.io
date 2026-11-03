@@ -1,0 +1,67 @@
+{%- assign p = site.data.profile -%}
+<div class="my-3 bg-white shadow-sm rounded-xl intro-card">
+    <div class="row no-gutters intro-main">
+        <!-- Left: portrait, email, social icons -->
+        <div class="col-md-4 col-lg-3 intro-side">
+            {% if p.portrait_url %}
+            <img src="{{ p.portrait_url | relative_url }}" alt="{{ p.primary_name }}" class="intro-portrait"
+                 data-toggle="tooltip" data-placement="top" title="{{ p.portrait_caption }}">
+            {% endif %}
+            <div class="small mt-2">
+                <a class="email-text" href="mailto:{{ p.email | encode_email }}">{{ p.email | replace: "@", "(at)" }}</a>
+            </div>
+            <div class="intro-icons h4 mb-0 mt-1">
+                {%- if p.gscholar -%}
+                {%- if p.gscholar contains 'scholar.google' -%}
+                {%- assign gscholar_url = p.gscholar -%}
+                {%- else -%}
+                {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: p.gscholar -%}
+                {%- endif -%}
+                <a class="px-1" target="_blank" href="{{ gscholar_url }}" title="Google Scholar"><i class="fab fa-google-scholar"></i></a>
+                {%- endif -%}
+                {%- if p.github %}
+                <a class="px-1" target="_blank" href="https://github.com/{{ p.github }}" title="GitHub"><i class="fab fa-github"></i></a>
+                {%- endif -%}
+                {%- if p.twitter %}
+                <a class="px-1" target="_blank" href="https://twitter.com/{{ p.twitter }}" title="Twitter"><i class="fab fa-twitter"></i></a>
+                {%- endif -%}
+                {%- if p.linkedin %}
+                <a class="px-1" target="_blank" href="https://www.linkedin.com/in/{{ p.linkedin }}" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                {%- endif -%}
+                {%- if p.orcid %}
+                <a class="px-1" target="_blank" href="https://orcid.org/{{ p.orcid }}" title="ORCID"><i class="fab fa-orcid"></i></a>
+                {%- endif %}
+            </div>
+        </div>
+
+        <!-- Right: name, position, bio, CV -->
+        <div class="col-md-8 col-lg-9 intro-body">
+            <h2 class="intro-name mb-0">{{ p.primary_name }}{% if p.secondary_name %} <small class="text-muted">{{ p.secondary_name }}</small>{% endif %}</h2>
+            <div class="text-muted mb-3">
+                {%- for position in p.positions -%}{{ position.name }}{% unless forloop.last %} &middot; {% endunless %}{%- endfor -%}
+            </div>
+            <div class="text-profile-bio" {% if p.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
+                {{ p.short_bio }}
+            </div>
+            {% if p.cv_link %}
+            <a target="_blank" href="{{ p.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> Curriculum Vitae</a>
+            {% endif %}
+        </div>
+    </div>
+
+    {% if site.data.display.homepage.show_experience and p.education %}
+    <!-- Compact education strip -->
+    <div class="intro-edu border-top border-gray small">
+        <span class="intro-edu-label">Education</span>
+        <div class="intro-edu-items">
+        {%- for item in p.education %}
+        <span class="intro-edu-item">
+            <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}">
+            <strong>{{ item.name }}</strong> &middot; {{ item.degree | default: item.position }}
+            <span class="text-muted">&middot; {{ item.date }}</span>
+        </span>
+        {%- endfor %}
+        </div>
+    </div>
+    {% endif %}
+</div>

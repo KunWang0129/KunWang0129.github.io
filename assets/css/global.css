@@ -2,7 +2,6 @@
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    padding-top: 5.0rem;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -42,8 +41,30 @@ h1, h2, h3, h4, h5, h6,
     font-weight: 400;
 }
 
-.navbar {
-    opacity: 0.95;
+/* Minimal top bar: page-colored, hairline underneath, scrolls away with the page. */
+.site-nav {
+    background: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 1rem 0;
+    margin-bottom: 1.25rem;
+}
+
+.site-nav .navbar-brand {
+    font-weight: 700;
+    color: #212529;
+}
+
+.site-nav .nav-link {
+    color: #6c757d !important;
+}
+
+.site-nav .nav-link:hover {
+    color: #212529 !important;
+}
+
+.site-nav .nav-item.active .nav-link {
+    color: var(--accent) !important;
+    font-weight: 600;
 }
 
 .inline-badge {
@@ -165,7 +186,7 @@ u.pub-me {
 }
 
 .pubs-scholar-link {
-    color: var(--accent);
+    text-decoration: none;
 }
 
 /* Links row: [abs] [arXiv] [code] */
@@ -284,4 +305,134 @@ u.pub-me {
     .service-role:first-child {
         margin-top: 0;
     }
+}
+
+/* ---- Homepage intro card (portrait + bio + compact education) ---- */
+.intro-main {
+    /* No side padding so the bio column starts where paper titles do (25% on lg). */
+    padding: 1.75rem 0 1.25rem;
+}
+
+.intro-main > .intro-side {
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.intro-main > .intro-body {
+    padding-right: 1.5rem;
+}
+
+.intro-portrait {
+    width: 100%;
+    max-width: 180px;
+    border-radius: 0.6rem;
+}
+
+.intro-icons a {
+    color: #495057;
+    text-decoration: none;
+}
+
+.intro-icons a:hover {
+    color: var(--accent);
+}
+
+.intro-name {
+    font-weight: 600;
+}
+
+.intro-name small {
+    font-size: 0.6em;
+    font-weight: 400;
+}
+
+.intro-edu {
+    display: flex;
+    align-items: baseline;
+    column-gap: 1.5rem;
+    padding: 0.6rem 1.5rem;
+}
+
+/* Schools wrap within their own column, so a second row lines up under the first school. */
+.intro-edu-items {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 0.35rem;
+}
+
+.intro-edu-label {
+    font-weight: 600;
+    color: #212529;
+}
+
+.intro-edu-item img {
+    height: 16px;
+    width: auto;
+    margin-right: 0.3rem;
+    vertical-align: -3px;
+}
+
+@media (max-width: 767.98px) {
+    .intro-main > .intro-side {
+        margin-bottom: 1.25rem;
+    }
+
+    .intro-main > .intro-body {
+        padding: 0 1.5rem;
+    }
+
+    .intro-portrait {
+        max-width: 150px;
+    }
+}
+
+/* ---- Page width ----
+   Narrow pages (homepage) cap content, navbar and footer at 960px:
+   about 2/3 of a 1440px laptop screen, ~90 characters per bio line.
+   Opt in per page with front matter `container_class: container-lg container-narrow`. */
+@media (min-width: 992px) {
+    .container-narrow {
+        max-width: 960px;
+    }
+}
+
+/* ---- Links: neutral by default, orange on hover ----
+   Plain `a` selectors (low specificity) so component rules like .pub-links still win. */
+a {
+    color: #212529;
+    text-decoration: underline;
+    text-decoration-color: rgba(33, 37, 41, 0.25);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+    transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+a:hover,
+a:focus {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+}
+
+/* Links that shouldn't carry an underline */
+.site-nav a,
+.site-nav a:hover,
+.pub-cover-link,
+.pub-cover-link:hover,
+#navbar-year .nav-link {
+    text-decoration: none;
+}
+
+/* Publications page year list: plain text, current year in orange (no blue pill) */
+#navbar-year .nav-link {
+    color: #6c757d;
+    background: transparent;
+}
+
+#navbar-year .nav-link:hover,
+#navbar-year .nav-link.active {
+    color: var(--accent);
+    background: transparent;
+    font-weight: 600;
 }

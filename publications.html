@@ -3,7 +3,7 @@ layout: default
 title : Publications
 navbar_title: Publications
 body_attr: >-
-  data-spy="scroll" data-target="#navbar-year" data-offset="100"
+  data-spy="scroll" data-target="#navbar-year" data-offset="40"
 ---
 
 {% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
@@ -32,7 +32,7 @@ body_attr: >-
     </div>
 
     <div class="col-2 d-none d-lg-block">
-        <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 80px">
+        <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 24px">
             {% for year in pubs_by_year %}
             <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
             {% endfor %}

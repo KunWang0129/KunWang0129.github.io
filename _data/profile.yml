@@ -36,11 +36,13 @@ education:
   position: >-
     Department of Computer Science <br/>
     Ph.D. Student
+  degree: Ph.D. in Computer Science   # short label for the homepage education strip
   date: Sep. 2025 - Present
 - name: UC San Diego
   logo: /assets/images/badges/UCSD_logo.png
   position: >-
     B.S. in Mathematics & Computer Science
+  degree: B.S. in Mathematics &amp; Computer Science
   date: Sep. 2021 - Jun. 2025
 
 # experience:
