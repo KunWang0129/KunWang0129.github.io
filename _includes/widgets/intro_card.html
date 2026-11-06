@@ -2,7 +2,7 @@
 <div class="my-3 bg-white shadow-sm rounded-xl intro-card">
     <div class="row no-gutters intro-main">
         <!-- Left: portrait, email, social icons -->
-        <div class="col-md-4 intro-side">
+        <div class="col-md-4 col-lg-3 intro-side">
             {% if p.portrait_url %}
             <img src="{{ p.portrait_url | relative_url }}" alt="{{ p.primary_name }}" class="intro-portrait"
                  data-toggle="tooltip" data-placement="top" title="{{ p.portrait_caption }}">
@@ -35,7 +35,7 @@
         </div>
 
         <!-- Right: name, position, bio, CV -->
-        <div class="col-md-8 intro-body">
+        <div class="col-md-8 col-lg-9 intro-body">
             <h2 class="intro-name">{{ p.primary_name }}{% if p.secondary_name %} <small class="text-muted">{{ p.secondary_name }}</small>{% endif %}</h2>
             <div class="text-muted mb-3">
                 {%- for position in p.positions -%}{{ position.name }}{% unless forloop.last %} &middot; {% endunless %}{%- endfor -%}

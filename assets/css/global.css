@@ -309,8 +309,9 @@ u.pub-me {
 
 /* ---- Homepage intro card (portrait + bio + compact education) ---- */
 .intro-main {
-    /* No side padding so the bio column starts where paper titles do (25% on lg). */
-    padding: 2.5rem 0 2rem;
+    /* No side padding: the columns mirror the publication rows (4/8 on md, 3/9 on lg),
+       so the bio column starts exactly where paper titles do (33.3% on md, 25% on lg). */
+    padding: 2.5rem 0 2.5rem;
 }
 
 .intro-main > .intro-side {
@@ -324,7 +325,7 @@ u.pub-me {
 
 .intro-portrait {
     width: 100%;
-    max-width: 210px;
+    max-width: 150px;
     border-radius: 0.6rem;
 }
 
@@ -398,15 +399,20 @@ u.pub-me {
     vertical-align: -3px;
 }
 
-/* Desktop: portrait starts in line with the paper thumbnails; wide (~4rem) gap before the bio */
+/* Desktop: portrait column has the same 1.5rem side padding as the paper-thumbnail column,
+   and the bio has no left padding (like .pub-body.pl-md-0) so it lines up with paper titles. */
 @media (min-width: 768px) {
     .intro-main > .intro-side {
-        padding: 0 2.5rem 0 1.5rem;
+        padding: 0 1.5rem;
     }
 
     .intro-main > .intro-body {
-        padding-left: 1.5rem;
+        padding-left: 0;
         padding-right: 2rem;
+    }
+
+    .intro-portrait {
+        max-width: 170px;
     }
 }
 
@@ -417,10 +423,6 @@ u.pub-me {
 
     .intro-main > .intro-body {
         padding: 0 1.5rem;
-    }
-
-    .intro-portrait {
-        max-width: 160px;
     }
 
     .intro-name {
